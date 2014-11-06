@@ -1,4 +1,5 @@
 ActiveAdmin.register AdminUser do
+  menu priority: 15, label: proc{ "Staff" }
   permit_params :email, :password, :password_confirmation
 
   index do

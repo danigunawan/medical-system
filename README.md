@@ -1,5 +1,5 @@
 # Medical System
 
-A rails app that provides hostpial employees access to the resources they need.
+A rails app that provides hospital employees access to the resources they need.
 
-In one interface.
+All in one interface.

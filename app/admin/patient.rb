@@ -1,4 +1,5 @@
 ActiveAdmin.register Patient do
+  menu priority: 2
   permit_params :first_name, :last_name
 
 

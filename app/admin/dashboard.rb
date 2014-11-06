@@ -34,6 +34,10 @@ ActiveAdmin.register_page "Dashboard" do
            end
          end
 
+         panel "Events" do
+           para "Today we are serving real food in the canteen"
+         end
+
          panel "Task History" do
            para "You have been on call for the past 77 hours."
          end
@@ -41,10 +45,19 @@ ActiveAdmin.register_page "Dashboard" do
          panel "Recent Patients" do
            table_for Patient.order('updated_at DESC') do
              column :id
+             column :first_name
+             column :last_name
              column :created_at
              column :updated_at
            end
          end
+
+         panel "Help and FAQs section" do
+           para "How do I order a consultation?"
+           para "How do I order a mortician?"
+           para "How do I avoid 'biters'?"
+         end
+
        end
      end
   end # content
