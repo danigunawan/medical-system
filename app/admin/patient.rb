@@ -1,6 +1,6 @@
 ActiveAdmin.register Patient do
   menu priority: 2
-  permit_params :first_name, :last_name, :dob, :ni
+  permit_params :first_name, :last_name, :dob, :ni, :phone, :email
 
   index do
     #which column is used for the box/multi select?
@@ -10,6 +10,8 @@ ActiveAdmin.register Patient do
     column ("Age") { |record| "xx" }
     column ("Weight") {|record| "110lb on 24/11/2013" }
     column ("Date of Birth") { |record| record.dob }
+    column(:phone)
+    column(:email)
     actions
   end
 
@@ -19,6 +21,8 @@ ActiveAdmin.register Patient do
       row(:first_name)
       row(:last_name)
       row("Date of Birth") { patient.dob }
+      row(:phone)
+      row(:email)
     end
 
     panel "Prescriptions" do

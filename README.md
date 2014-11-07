@@ -1,5 +1,5 @@
 # Medical System
 
-A rails app that provides hospital employees access to the resources they need.
+A rails site that provides hospital employees access to the resources they need.
 
-All in one interface.
+[See the demo here](http://medical-system.herokuapp.com)

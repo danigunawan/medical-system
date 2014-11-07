@@ -8,6 +8,11 @@ ActiveAdmin.register_page "Personal" do
           para "Find the nearest bed that\'s free"
         end
       end
+      column do
+        panel "Book time off" do
+          para "You have 28 days remaining"
+        end
+      end
     end
   end
 end
