@@ -1,10 +1,12 @@
 ActiveAdmin.register Patient do
   menu priority: 2
-  permit_params :first_name, :last_name, :dob, :ni, :phone, :email
+  permit_params :status, :first_name, :last_name, :dob, :ni, :phone, :email
 
   index do
     #which column is used for the box/multi select?
     column :id
+    column :on_site
+    column :status
     column :first_name
     column :last_name
     column ("Age") { |record| "xx" }
@@ -18,6 +20,8 @@ ActiveAdmin.register Patient do
   show title: :first_name do |patient|
     attributes_table do
       row(:id)
+      row(:on_site)
+      row(:status)
       row(:first_name)
       row(:last_name)
       row("Date of Birth") { patient.dob }
