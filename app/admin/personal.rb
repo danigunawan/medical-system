@@ -14,5 +14,12 @@ ActiveAdmin.register_page "Personal" do
         end
       end
     end
+    columns do
+      column do
+        panel "Report a Problem at Work" do
+          para "Click here... :)"
+        end
+      end
+    end
   end
 end
