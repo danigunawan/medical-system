@@ -12,3 +12,8 @@ A rails site that provides hospital employees access to the resources they need.
 > Medical information & research access.
 > Patient record access.
 > Ordering of prescriptions.
+> Emergency room high-view queuing.
+
+## Planning
+
+> Get Patient view setup; get Room booking
