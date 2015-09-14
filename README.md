@@ -17,3 +17,10 @@ A rails site that provides hospital employees access to the resources they need.
 ## Planning
 
 > Get Patient view setup; get Room booking
+
+### Issues
+
+Dob drop down only ranges from 2010 to 2020...
+Last checkup can be set in the future...
+phone element in a number, standard phone numbers go outside this range => change to text field
+create 'Add new patient' to individual patient view window next to delete/edit
